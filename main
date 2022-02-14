@@ -1,0 +1,143 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Fly = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local SilentAim = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local ESP = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Speed = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Worker = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local ClickTP = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Main.Position = UDim2.new(0, 0, 0.653905034, 0)
+Main.Size = UDim2.new(0, 389, 0, 226)
+
+Fly.Name = "Fly"
+Fly.Parent = Main
+Fly.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+Fly.Position = UDim2.new(0.528310597, 0, 0.722222209, 0)
+Fly.Size = UDim2.new(0, 167, 0, 50)
+Fly.Font = Enum.Font.TitilliumWeb
+Fly.Text = "Fly"
+Fly.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fly.TextScaled = true
+Fly.TextSize = 14.000
+Fly.TextWrapped = true
+
+UICorner.Parent = Fly
+
+SilentAim.Name = "SilentAim"
+SilentAim.Parent = Main
+SilentAim.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+SilentAim.Position = UDim2.new(0, 0, 0.722222209, 0)
+SilentAim.Size = UDim2.new(0, 167, 0, 50)
+SilentAim.Font = Enum.Font.TitilliumWeb
+SilentAim.Text = "SilentAim"
+SilentAim.TextColor3 = Color3.fromRGB(0, 0, 0)
+SilentAim.TextScaled = true
+SilentAim.TextSize = 14.000
+SilentAim.TextWrapped = true
+
+UICorner_2.Parent = SilentAim
+
+UICorner_3.Parent = Main
+
+Title.Name = "Title"
+Title.Parent = Main
+Title.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+Title.Position = UDim2.new(0, 0, -0.200000048, 0)
+Title.Size = UDim2.new(0, 389, 0, 45)
+Title.Font = Enum.Font.TitilliumWeb
+Title.Text = "Hoodians"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+UICorner_4.Parent = Title
+
+ESP.Name = "ESP"
+ESP.Parent = Main
+ESP.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+ESP.Position = UDim2.new(0, 0, 0.387659788, 0)
+ESP.Size = UDim2.new(0, 167, 0, 50)
+ESP.Font = Enum.Font.TitilliumWeb
+ESP.Text = "ESP"
+ESP.TextColor3 = Color3.fromRGB(0, 0, 0)
+ESP.TextScaled = true
+ESP.TextSize = 14.000
+ESP.TextWrapped = true
+
+UICorner_5.Parent = ESP
+
+Speed.Name = "Speed"
+Speed.Parent = Main
+Speed.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+Speed.Position = UDim2.new(0.526992321, 0, 0.387659788, 0)
+Speed.Size = UDim2.new(0, 167, 0, 50)
+Speed.Font = Enum.Font.TitilliumWeb
+Speed.Text = "Speed"
+Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
+Speed.TextScaled = true
+Speed.TextSize = 14.000
+Speed.TextWrapped = true
+
+UICorner_6.Parent = Speed
+
+Worker.Name = "Worker"
+Worker.Parent = Main
+Worker.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+Worker.Position = UDim2.new(0.526992321, 0, 0.0513766035, 0)
+Worker.Size = UDim2.new(0, 167, 0, 50)
+Worker.Font = Enum.Font.TitilliumWeb
+Worker.Text = "Nothing for rn"
+Worker.TextColor3 = Color3.fromRGB(0, 0, 0)
+Worker.TextScaled = true
+Worker.TextSize = 14.000
+Worker.TextWrapped = true
+
+UICorner_7.Parent = Worker
+
+ClickTP.Name = "ClickTP"
+ClickTP.Parent = Main
+ClickTP.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+ClickTP.Position = UDim2.new(5.96046448e-08, 0, 0.051376611, 0)
+ClickTP.Size = UDim2.new(0, 167, 0, 50)
+ClickTP.Font = Enum.Font.TitilliumWeb
+ClickTP.Text = "ClickTP"
+ClickTP.TextColor3 = Color3.fromRGB(0, 0, 0)
+ClickTP.TextScaled = true
+ClickTP.TextSize = 14.000
+ClickTP.TextWrapped = true
+
+UICorner_8.Parent = ClickTP
+
+
+SilentAim.MouseButton1Down:connect(function()
+	_G.Fov = 45
+	_G.Sides = 15
+	_G.ShowFov = true
+	_G.HitChance = 100
+	local a=loadstring(game:HttpGet("https://raw.githubusercontent.com/Red72Falcon/DaHoodians/main/Script"))()a.TeamCheck(false)local b=game:GetService("Workspace")local c=game:GetService("Players")local d=game:GetService("RunService")local e=game:GetService("UserInputService")local f=c.LocalPlayer;local g=f:GetMouse()local h=b.CurrentCamera;local i={SilentAim=true,AimLock=true,Prediction=0.165}getgenv().DaHoodSettings=i;function a.Check()if not(a.Enabled==true and a.Selected~=f and a.SelectedPart~=nil)then return false end;local j=a.Character(a.Selected)local k=j:WaitForChild("BodyEffects")["K.O"].Value;local l=j:FindFirstChild("GRABBING_CONSTRAINT")~=nil;if k or l then return false end;return true end;local m;m=hookmetamethod(game,"__index",function(n,o)if n:IsA("Mouse")and(o=="Hit"or o=="Target")and a.Check()then local p=a.SelectedPart;if i.SilentAim and(o=="Hit"or o=="Target")then local q=p.CFrame+p.Velocity*i.Prediction;return o=="Hit"and q or p end end;return m(n,o)end)local r=Instance.new('Sound')r.Parent=game.Workspace;r.Volume=500;r.SoundId="rbxassetid://5961039264"r.Name=" "r:Play()wait(0.11)r:Play()wait(0.11)r:Play()wait(0.11)r:Play()wait(0.11)r:Destroy()
+end)
+	
