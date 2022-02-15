@@ -1,0 +1,406 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local CombatFrame = Instance.new("Frame")
+local EzESP = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local EzFist = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local EzFly = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local EzReach = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local EzTP = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local EzSilent = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Buttons = Instance.new("Frame")
+local Combat = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Dahoodians = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
+MainFrame.Position = UDim2.new(0.00254237279, 0, 0.556797028, 0)
+MainFrame.Size = UDim2.new(0, 335, 0, 238)
+
+CombatFrame.Name = "CombatFrame"
+CombatFrame.Parent = MainFrame
+CombatFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+CombatFrame.BackgroundTransparency = 1.000
+CombatFrame.Size = UDim2.new(0, 335, 0, 238)
+
+EzESP.Name = "EzESP"
+EzESP.Parent = CombatFrame
+EzESP.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+EzESP.Position = UDim2.new(0.572695971, 0, 0.223775446, 0)
+EzESP.Size = UDim2.new(0, 125, 0, 25)
+EzESP.Font = Enum.Font.SourceSans
+EzESP.Text = "ESP"
+EzESP.TextColor3 = Color3.fromRGB(255, 255, 255)
+EzESP.TextScaled = true
+EzESP.TextSize = 14.000
+EzESP.TextWrapped = true
+
+UICorner.Parent = EzESP
+
+EzFist.Name = "EzFist"
+EzFist.Parent = CombatFrame
+EzFist.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+EzFist.Position = UDim2.new(0.166725844, 0, 0.447301745, 0)
+EzFist.Size = UDim2.new(0, 125, 0, 25)
+EzFist.Font = Enum.Font.SourceSans
+EzFist.Text = "FistReach"
+EzFist.TextColor3 = Color3.fromRGB(255, 255, 255)
+EzFist.TextScaled = true
+EzFist.TextSize = 14.000
+EzFist.TextWrapped = true
+
+UICorner_2.Parent = EzFist
+
+EzFly.Name = "EzFly"
+EzFly.Parent = CombatFrame
+EzFly.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+EzFly.Position = UDim2.new(0.572695971, 0, 0.638904631, 0)
+EzFly.Size = UDim2.new(0, 125, 0, 25)
+EzFly.Font = Enum.Font.SourceSans
+EzFly.Text = "Fly (x)"
+EzFly.TextColor3 = Color3.fromRGB(255, 255, 255)
+EzFly.TextScaled = true
+EzFly.TextSize = 14.000
+EzFly.TextWrapped = true
+
+UICorner_3.Parent = EzFly
+
+EzReach.Name = "EzReach"
+EzReach.Parent = CombatFrame
+EzReach.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+EzReach.Position = UDim2.new(0.56971091, 0, 0.447301745, 0)
+EzReach.Size = UDim2.new(0, 125, 0, 25)
+EzReach.Font = Enum.Font.SourceSans
+EzReach.Text = "ToolReach"
+EzReach.TextColor3 = Color3.fromRGB(255, 255, 255)
+EzReach.TextScaled = true
+EzReach.TextSize = 14.000
+EzReach.TextWrapped = true
+
+UICorner_4.Parent = EzReach
+
+EzTP.Name = "EzTP"
+EzTP.Parent = CombatFrame
+EzTP.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+EzTP.Position = UDim2.new(0.166725814, 0, 0.22713992, 0)
+EzTP.Size = UDim2.new(0, 125, 0, 25)
+EzTP.Font = Enum.Font.SourceSans
+EzTP.Text = "ClickTP(Tool)"
+EzTP.TextColor3 = Color3.fromRGB(255, 255, 255)
+EzTP.TextScaled = true
+EzTP.TextSize = 14.000
+EzTP.TextWrapped = true
+
+UICorner_5.Parent = EzTP
+
+EzSilent.Name = "EzSilent"
+EzSilent.Parent = CombatFrame
+EzSilent.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+EzSilent.Position = UDim2.new(0.163740769, 0, 0.639741838, 0)
+EzSilent.Size = UDim2.new(0, 125, 0, 25)
+EzSilent.Font = Enum.Font.SourceSans
+EzSilent.Text = "SilentAim"
+EzSilent.TextColor3 = Color3.fromRGB(255, 255, 255)
+EzSilent.TextScaled = true
+EzSilent.TextSize = 14.000
+EzSilent.TextWrapped = true
+
+UICorner_6.Parent = EzSilent
+
+Buttons.Name = "Buttons"
+Buttons.Parent = MainFrame
+Buttons.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Buttons.Size = UDim2.new(0, 44, 0, 238)
+
+Combat.Name = "Combat"
+Combat.Parent = Buttons
+Combat.BackgroundColor3 = Color3.fromRGB(117, 117, 117)
+Combat.Position = UDim2.new(0.0706920028, 0, 0.155743882, 0)
+Combat.Size = UDim2.new(0, 36, 0, 37)
+Combat.ZIndex = 3
+Combat.Font = Enum.Font.SourceSans
+Combat.Text = "Combat"
+Combat.TextColor3 = Color3.fromRGB(255, 255, 255)
+Combat.TextScaled = true
+Combat.TextSize = 14.000
+Combat.TextWrapped = true
+
+UICorner_7.Parent = Combat
+
+Dahoodians.Name = "Dahoodians"
+Dahoodians.Parent = MainFrame
+Dahoodians.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+Dahoodians.Size = UDim2.new(0, 335, 0, 30)
+Dahoodians.Font = Enum.Font.Ubuntu
+Dahoodians.Text = "Dahoodians"
+Dahoodians.TextColor3 = Color3.fromRGB(255, 255, 255)
+Dahoodians.TextScaled = true
+Dahoodians.TextSize = 14.000
+Dahoodians.TextWrapped = true
+
+-- Scripts:
+
+local function UXFQKBV_fake_script() -- Combat.VisibleCombat 
+	local script = Instance.new('LocalScript', Combat)
+
+	local Button = script.Parent
+	Frame = script.Parent.Parent.Parent.CombatFrame ---Enter Name Of Frame
+	
+	function onClick()
+		if Frame.Visible == false then
+			Frame.Visible = true
+		elseif Frame.Visible == true then
+			Frame.Visible = false
+		end
+	end
+	
+	Button.MouseButton1Click:connect(onClick)
+end
+coroutine.wrap(UXFQKBV_fake_script)()
+local function ERHHV_fake_script() -- MainFrame.LocalScript 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	frame = script.Parent
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(ERHHV_fake_script)()
+
+
+EzSilent.MouseButton1Down:connect(function()
+	_G.Fov = 45
+	_G.Sides = 15
+	_G.ShowFov = true
+	_G.HitChance = 100
+	local a=loadstring(game:HttpGet("https://raw.githubusercontent.com/Red72Falcon/DaHoodians/main/Script"))()a.TeamCheck(false)local b=game:GetService("Workspace")local c=game:GetService("Players")local d=game:GetService("RunService")local e=game:GetService("UserInputService")local f=c.LocalPlayer;local g=f:GetMouse()local h=b.CurrentCamera;local i={SilentAim=true,AimLock=true,Prediction=0.165}getgenv().DaHoodSettings=i;function a.Check()if not(a.Enabled==true and a.Selected~=f and a.SelectedPart~=nil)then return false end;local j=a.Character(a.Selected)local k=j:WaitForChild("BodyEffects")["K.O"].Value;local l=j:FindFirstChild("GRABBING_CONSTRAINT")~=nil;if k or l then return false end;return true end;local m;m=hookmetamethod(game,"__index",function(n,o)if n:IsA("Mouse")and(o=="Hit"or o=="Target")and a.Check()then local p=a.SelectedPart;if i.SilentAim and(o=="Hit"or o=="Target")then local q=p.CFrame+p.Velocity*i.Prediction;return o=="Hit"and q or p end end;return m(n,o)end)local r=Instance.new('Sound')r.Parent=game.Workspace;r.Volume=500;r.SoundId="rbxassetid://1583819337"r.Name=" "r:Play()wait(0.11)r:Play()wait(0.11)r:Play()wait(0.11)r:Play()wait(0.11)r:Destroy()
+end) --- completed works 100%
+
+EzESP.MouseButton1Down:connect(function()
+	local esp_settings = {
+		textsize = 8,
+		colour = 255,255,255
+	}
+
+	local gui = Instance.new("BillboardGui")
+	local esp = Instance.new("TextLabel",gui)
+
+
+
+	gui.Name = "Cracked esp"; ---- properties of the esp
+	gui.ResetOnSpawn = false
+	gui.AlwaysOnTop = true;
+	gui.LightInfluence = 0;
+	gui.Size = UDim2.new(1.75, 0, 1.75, 0);
+	esp.BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+	esp.Text = ""
+	esp.Size = UDim2.new(0.0001, 0.00001, 0.0001, 0.00001);
+	esp.BorderSizePixel = 4;
+	esp.BorderColor3 = Color3.new(esp_settings.colour)
+	esp.BorderSizePixel = 0
+	esp.Font = "GothamSemibold"
+	esp.TextSize = esp_settings.textsize
+	esp.TextColor3 = Color3.fromRGB(esp_settings.colour) -- text colour
+
+	game:GetService("RunService").RenderStepped:Connect(function()
+		for i,v in pairs (game:GetService("Players"):GetPlayers()) do
+			if v ~= game:GetService("Players").LocalPlayer and v.Character.Head:FindFirstChild("Cracked esp")==nil  then
+				esp.Text = "{"..v.Name.."}"
+				gui:Clone().Parent = v.Character.Head
+			end
+		end
+	end)
+end)
+
+EzTP.MouseButton1Down:connect(function()
+	game.StarterGui:SetCoreGuiEnabled(2, true)
+	mouse = game.Players.LocalPlayer:GetMouse()
+	tool = Instance.new("Tool")
+	tool.RequiresHandle = false
+	tool.Name = "Click Teleport"
+	tool.Activated:connect(function()
+		local pos = mouse.Hit+Vector3.new(0,2.5,0)
+		pos = CFrame.new(pos.X,pos.Y,pos.Z)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+	end)
+	tool.Parent = game.Players.LocalPlayer.Backpack
+end)
+
+EzFly.MouseButton1Down:connect(function()
+	local plr = game.Players.LocalPlayer
+	local mouse = plr:GetMouse()
+
+	localplayer = plr
+
+	if workspace:FindFirstChild("Core") then
+		workspace.Core:Destroy()
+	end
+
+	local Core = Instance.new("Part")
+	Core.Name = "Core"
+	Core.Size = Vector3.new(0.05, 0.05, 0.05)
+
+	spawn(function()
+		Core.Parent = workspace
+		local Weld = Instance.new("Weld", Core)
+		Weld.Part0 = Core
+		Weld.Part1 = localplayer.Character.LowerTorso
+		Weld.C0 = CFrame.new(0, 0, 0)
+	end)
+
+	workspace:WaitForChild("Core")
+
+	local torso = workspace.Core
+	flying = true
+	local speed=10
+	local keys={a=false,d=false,w=false,s=false}
+	local e1
+	local e2
+	local function start()
+		local pos = Instance.new("BodyPosition",torso)
+		local gyro = Instance.new("BodyGyro",torso)
+		pos.Name="EPIXPOS"
+		pos.maxForce = Vector3.new(math.huge, math.huge, math.huge)
+		pos.position = torso.Position
+		gyro.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+		gyro.cframe = torso.CFrame
+		repeat
+			wait()
+			localplayer.Character.Humanoid.PlatformStand=true
+			local new=gyro.cframe - gyro.cframe.p + pos.position
+			if not keys.w and not keys.s and not keys.a and not keys.d then
+				speed=5
+			end
+			if keys.w then
+				new = new + workspace.CurrentCamera.CoordinateFrame.lookVector * speed
+				speed=speed+0
+			end
+			if keys.s then
+				new = new - workspace.CurrentCamera.CoordinateFrame.lookVector * speed
+				speed=speed+0
+			end
+			if keys.d then
+				new = new * CFrame.new(speed,0,0)
+				speed=speed+0
+			end
+			if keys.a then
+				new = new * CFrame.new(-speed,0,0)
+				speed=speed+0
+			end
+			if speed>10 then
+				speed=5
+			end
+			pos.position=new.p
+			if keys.w then
+				gyro.cframe = workspace.CurrentCamera.CoordinateFrame*CFrame.Angles(-math.rad(speed*0),0,0)
+			elseif keys.s then
+				gyro.cframe = workspace.CurrentCamera.CoordinateFrame*CFrame.Angles(math.rad(speed*0),0,0)
+			else
+				gyro.cframe = workspace.CurrentCamera.CoordinateFrame
+			end
+		until flying == false
+		if gyro then gyro:Destroy() end
+		if pos then pos:Destroy() end
+		flying=false
+		localplayer.Character.Humanoid.PlatformStand=false
+		speed=10
+	end
+	e1=mouse.KeyDown:connect(function(key)
+		if not torso or not torso.Parent then flying=false e1:disconnect() e2:disconnect() return end
+		if key=="w" then
+			keys.w=true
+		elseif key=="s" then
+			keys.s=true
+		elseif key=="a" then
+			keys.a=true
+		elseif key=="d" then
+			keys.d=true
+		elseif key=="x" then
+			if flying==true then
+				flying=false
+			else
+				flying=true
+				start()
+			end
+		end
+	end)
+	e2=mouse.KeyUp:connect(function(key)
+		if key=="w" then
+			keys.w=false
+		elseif key=="s" then
+			keys.s=false
+		elseif key=="a" then
+			keys.a=false
+		elseif key=="d" then
+			keys.d=false
+		end
+	end)
+	start()
+end)
+
+EzFist.MouseButton1Down:connect(function()
+	LP = game.Players.LocalPlayer
+	for i,v in ipairs(LP.Character:GetDescendants()) do
+		if v:IsA("MeshPart") then v.Massless = true
+			v.CanCollide = false
+			v.CustomPhysicalProperties = PhysicalProperties.new(0, 0, 0, 0, 0)
+
+		end
+	end
+
+	for i,v in ipairs(game.workspace:GetDescendants()) do
+		if v:IsA("Seat") then 
+			v.Disabled = true
+		end
+	end
+	x = 35
+	y = 35
+	z = 35
+
+
+	penis = Vector3.new(x,y,z)
+
+	LP.Character.RightHand.Size = penis
+
+	LP.Character.RightHand.Transparency = 1
+	local selectionBox = Instance.new("SelectionBox",LP.Character.RightHand)
+	selectionBox.Adornee = LP.Character.RightHand
+	selectionBox.Color3 = Color3.new(1,0,0)
+
+	LP.Character.LeftHand.Size = penis
+	LP.Character.BodyEffects.SpecialParts.LeftHand.Size = penis
+
+	LP.Character.LeftHand.Transparency = 1
+	local selectionBox = Instance.new("SelectionBox",LP.Character.LeftHand)
+	selectionBox.Adornee = LP.Character.LeftHand
+	selectionBox.Color3 = Color3.new(1,0,0)
+
+end)
+
+EzReach.MouseButton1Down:connect(function()
+	for i,v in pairs(game:GetService'Players'.LocalPlayer.Character:GetChildren())do
+		if v:isA("Tool") then
+			local a = Instance.new("SelectionBox",v.Handle)
+			a.Adornee = v.Handle
+			v.Handle.Size = Vector3.new(50, 50, 50)
+			--plr.Character.Humanoid:UnequipTools()
+		end
+	end          
+end)
