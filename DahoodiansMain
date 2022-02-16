@@ -1,7 +1,4 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
+---hey if your seeing this then you unobfuscated my script! have fun with whats in here idrc
 
 local ScreenGui = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
@@ -22,9 +19,11 @@ local To_player = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
 local TextBox = Instance.new("TextBox")
 local UICorner_8 = Instance.new("UICorner")
+local FOVTEXT = Instance.new("TextBox")
+local UICorner_9 = Instance.new("UICorner")
 local Buttons = Instance.new("Frame")
 local Combat = Instance.new("TextButton")
-local UICorner_9 = Instance.new("UICorner")
+local UICorner_10 = Instance.new("UICorner")
 local Dahoodians = Instance.new("TextLabel")
 
 --Properties:
@@ -103,8 +102,8 @@ UICorner_4.Parent = ClickTP
 SilentAim.Name = "SilentAim"
 SilentAim.Parent = CombatFrame
 SilentAim.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-SilentAim.Position = UDim2.new(0.163740769, 0, 0.639741838, 0)
-SilentAim.Size = UDim2.new(0, 125, 0, 25)
+SilentAim.Position = UDim2.new(0.163740739, 0, 0.639741778, 0)
+SilentAim.Size = UDim2.new(0, 62, 0, 25)
 SilentAim.Font = Enum.Font.SourceSans
 SilentAim.Text = "SilentAim"
 SilentAim.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -156,6 +155,21 @@ TextBox.TextWrapped = true
 
 UICorner_8.Parent = TextBox
 
+FOVTEXT.Name = "FOVTEXT"
+FOVTEXT.Parent = CombatFrame
+FOVTEXT.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+FOVTEXT.Position = UDim2.new(0.348815382, 0, 0.639741778, 0)
+FOVTEXT.Size = UDim2.new(0, 62, 0, 25)
+FOVTEXT.Font = Enum.Font.SourceSans
+FOVTEXT.PlaceholderText = "FOV"
+FOVTEXT.Text = ""
+FOVTEXT.TextColor3 = Color3.fromRGB(0, 0, 0)
+FOVTEXT.TextScaled = true
+FOVTEXT.TextSize = 14.000
+FOVTEXT.TextWrapped = true
+
+UICorner_9.Parent = FOVTEXT
+
 Buttons.Name = "Buttons"
 Buttons.Parent = MainFrame
 Buttons.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
@@ -174,7 +188,7 @@ Combat.TextScaled = true
 Combat.TextSize = 14.000
 Combat.TextWrapped = true
 
-UICorner_9.Parent = Combat
+UICorner_10.Parent = Combat
 
 Dahoodians.Name = "Dahoodians"
 Dahoodians.Parent = MainFrame
@@ -189,7 +203,7 @@ Dahoodians.TextWrapped = true
 
 -- Scripts:
 
-local function VARRLOF_fake_script() -- Esp.Esp 
+local function PHBM_fake_script() -- Esp.Esp 
 	local script = Instance.new('LocalScript', Esp)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -197,12 +211,12 @@ local function VARRLOF_fake_script() -- Esp.Esp
 			textsize = 8,
 			colour = 255,255,255
 		}
-
+	
 		local gui = Instance.new("BillboardGui")
 		local esp = Instance.new("TextLabel",gui)
-
-
-
+	
+	
+	
 		gui.Name = "Cracked esp"; ---- properties of the esp
 		gui.ResetOnSpawn = false
 		gui.AlwaysOnTop = true;
@@ -217,7 +231,7 @@ local function VARRLOF_fake_script() -- Esp.Esp
 		esp.Font = "GothamSemibold"
 		esp.TextSize = esp_settings.textsize
 		esp.TextColor3 = Color3.fromRGB(esp_settings.colour) -- text colour
-
+	
 		game:GetService("RunService").RenderStepped:Connect(function()
 			for i,v in pairs (game:GetService("Players"):GetPlayers()) do
 				if v ~= game:GetService("Players").LocalPlayer and v.Character.Head:FindFirstChild("Cracked esp")==nil  then
@@ -228,8 +242,8 @@ local function VARRLOF_fake_script() -- Esp.Esp
 		end)
 	end)
 end
-coroutine.wrap(VARRLOF_fake_script)()
-local function TAYMRI_fake_script() -- FistReach.FistReach 
+coroutine.wrap(PHBM_fake_script)()
+local function KZKY_fake_script() -- FistReach.FistReach 
 	local script = Instance.new('LocalScript', FistReach)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -238,10 +252,10 @@ local function TAYMRI_fake_script() -- FistReach.FistReach
 			if v:IsA("MeshPart") then v.Massless = true
 				v.CanCollide = false
 				v.CustomPhysicalProperties = PhysicalProperties.new(0, 0, 0, 0, 0)
-
+	
 			end
 		end
-
+	
 		for i,v in ipairs(game.workspace:GetDescendants()) do
 			if v:IsA("Seat") then 
 				v.Disabled = true
@@ -250,29 +264,29 @@ local function TAYMRI_fake_script() -- FistReach.FistReach
 		x = 35
 		y = 35
 		z = 35
-
-
+	
+	
 		penis = Vector3.new(x,y,z)
-
+	
 		LP.Character.RightHand.Size = penis
-
+	
 		LP.Character.RightHand.Transparency = 1
 		local selectionBox = Instance.new("SelectionBox",LP.Character.RightHand)
 		selectionBox.Adornee = LP.Character.RightHand
 		selectionBox.Color3 = Color3.new(1,0,0)
-
+	
 		LP.Character.LeftHand.Size = penis
 		LP.Character.BodyEffects.SpecialParts.LeftHand.Size = penis
-
+	
 		LP.Character.LeftHand.Transparency = 1
 		local selectionBox = Instance.new("SelectionBox",LP.Character.LeftHand)
 		selectionBox.Adornee = LP.Character.LeftHand
 		selectionBox.Color3 = Color3.new(1,0,0)
-
+	
 	end)
 end
-coroutine.wrap(TAYMRI_fake_script)()
-local function FZAJZ_fake_script() -- ToolReach.ToolScript 
+coroutine.wrap(KZKY_fake_script)()
+local function VTMDNL_fake_script() -- ToolReach.ToolScript 
 	local script = Instance.new('LocalScript', ToolReach)
 
 	ToolReach.MouseButton1Down:connect(function()
@@ -286,8 +300,8 @@ local function FZAJZ_fake_script() -- ToolReach.ToolScript
 		end          
 	end)
 end
-coroutine.wrap(FZAJZ_fake_script)()
-local function IDFF_fake_script() -- ClickTP.ClickTP 
+coroutine.wrap(VTMDNL_fake_script)()
+local function BGPFML_fake_script() -- ClickTP.ClickTP 
 	local script = Instance.new('LocalScript', ClickTP)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -304,36 +318,38 @@ local function IDFF_fake_script() -- ClickTP.ClickTP
 		tool.Parent = game.Players.LocalPlayer.Backpack
 	end)
 end
-coroutine.wrap(IDFF_fake_script)()
-local function JSSPNU_fake_script() -- SilentAim.Silent 
+coroutine.wrap(BGPFML_fake_script)()
+local function NSUNKPY_fake_script() -- SilentAim.Silent 
 	local script = Instance.new('LocalScript', SilentAim)
 
+	
 	script.Parent.MouseButton1Down:connect(function()
-		_G.Fov = 45
+		local fov = FOVTEXT.Text
+		_G.Fov = fov
 		_G.Sides = 15
 		_G.ShowFov = true
 		_G.HitChance = 100
 		local a=loadstring(game:HttpGet("https://raw.githubusercontent.com/Red72Falcon/DaHoodians/main/Script"))()a.TeamCheck(false)local b=game:GetService("Workspace")local c=game:GetService("Players")local d=game:GetService("RunService")local e=game:GetService("UserInputService")local f=c.LocalPlayer;local g=f:GetMouse()local h=b.CurrentCamera;local i={SilentAim=true,AimLock=true,Prediction=0.165}getgenv().DaHoodSettings=i;function a.Check()if not(a.Enabled==true and a.Selected~=f and a.SelectedPart~=nil)then return false end;local j=a.Character(a.Selected)local k=j:WaitForChild("BodyEffects")["K.O"].Value;local l=j:FindFirstChild("GRABBING_CONSTRAINT")~=nil;if k or l then return false end;return true end;local m;m=hookmetamethod(game,"__index",function(n,o)if n:IsA("Mouse")and(o=="Hit"or o=="Target")and a.Check()then local p=a.SelectedPart;if i.SilentAim and(o=="Hit"or o=="Target")then local q=p.CFrame+p.Velocity*i.Prediction;return o=="Hit"and q or p end end;return m(n,o)end)local r=Instance.new('Sound')r.Parent=game.Workspace;r.Volume=500;r.SoundId="rbxassetid://1583819337"r.Name=" "r:Play()wait(0.11)r:Play()wait(0.11)r:Play()wait(0.11)r:Play()wait(0.11)r:Destroy()
 	end) --- Creds To itsallty
 end
-coroutine.wrap(JSSPNU_fake_script)()
-local function XSRLLYQ_fake_script() -- Fly.Fly 
+coroutine.wrap(NSUNKPY_fake_script)()
+local function ZQITVOT_fake_script() -- Fly.Fly 
 	local script = Instance.new('LocalScript', Fly)
 
 	script.Parent.MouseButton1Down:connect(function()
 		local plr = game.Players.LocalPlayer
 		local mouse = plr:GetMouse()
-
+	
 		localplayer = plr
-
+	
 		if workspace:FindFirstChild("Core") then
 			workspace.Core:Destroy()
 		end
-
+	
 		local Core = Instance.new("Part")
 		Core.Name = "Core"
 		Core.Size = Vector3.new(0.05, 0.05, 0.05)
-
+	
 		spawn(function()
 			Core.Parent = workspace
 			local Weld = Instance.new("Weld", Core)
@@ -341,9 +357,9 @@ local function XSRLLYQ_fake_script() -- Fly.Fly
 			Weld.Part1 = localplayer.Character.LowerTorso
 			Weld.C0 = CFrame.new(0, 0, 0)
 		end)
-
+	
 		workspace:WaitForChild("Core")
-
+	
 		local torso = workspace.Core
 		flying = true
 		local speed=10
@@ -432,27 +448,13 @@ local function XSRLLYQ_fake_script() -- Fly.Fly
 		start()
 	end)
 end
-coroutine.wrap(XSRLLYQ_fake_script)()
-local function JJCZRW_fake_script() -- To_player.To_player 
-	local script = Instance.new('LocalScript', To_player)
-
-	script.Parent.MouseButton1Click:connect(function()
-		local Target
-		local character
-		local Player
-		Player = game.Players.LocalPlayer
-		character = workspace:WaitForChild(Player.name)
-		Target = TextBox.Text
-		Player.character.HumanoidRootPart.CFrame = game.Players[Target].character.HumanoidRootPart.CFrame
-	end)
-end
-coroutine.wrap(JJCZRW_fake_script)()
-local function XXEU_fake_script() -- Combat.VisibleCombat 
+coroutine.wrap(ZQITVOT_fake_script)()
+local function RCHRRL_fake_script() -- Combat.VisibleCombat 
 	local script = Instance.new('LocalScript', Combat)
 
 	local Button = script.Parent
 	Frame = script.Parent.Parent.Parent.CombatFrame ---Enter Name Of Frame
-
+	
 	function onClick()
 		if Frame.Visible == false then
 			Frame.Visible = true
@@ -460,11 +462,11 @@ local function XXEU_fake_script() -- Combat.VisibleCombat
 			Frame.Visible = false
 		end
 	end
-
+	
 	Button.MouseButton1Click:connect(onClick)
 end
-coroutine.wrap(XXEU_fake_script)()
-local function VMEQ_fake_script() -- MainFrame.LocalScript 
+coroutine.wrap(RCHRRL_fake_script)()
+local function JBIXPKP_fake_script() -- MainFrame.LocalScript 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	frame = script.Parent
@@ -472,18 +474,4 @@ local function VMEQ_fake_script() -- MainFrame.LocalScript
 	frame.Active = true
 	frame.Selectable = true
 end
-coroutine.wrap(VMEQ_fake_script)()
-
-
-local function LTRTHL_fake_script() -- To_player.ToPlayer() 
-	local script = Instance.new('LocalScript', To_player)
-	script.Parent.MouseButton1Click:Connect(function()
-		local plr = game:GetService('Players').LocalPlayer
-		local Username = TextBox.Text
-		local plr2 = game.Players:FindFirstChild(Username)
-		plr.Character.HumanoidRootPart.CFrame = plr2.Character.HumanoidRootPart.CFrame * CFrame.new(0,4,0)
-
-
-	end)   
-end
-coroutine.wrap(LTRTHL_fake_script)()
+coroutine.wrap(JBIXPKP_fake_script)()
