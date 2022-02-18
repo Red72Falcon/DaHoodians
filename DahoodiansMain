@@ -2,7 +2,7 @@
 -- Version: 3.2
 
 -- Instances:
-
+--- to anyone that finds this have a good day
 local ScreenGui = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
 local Buttons = Instance.new("Frame")
