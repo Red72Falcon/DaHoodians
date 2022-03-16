@@ -1,5 +1,5 @@
 --// Premium User //--
-local user_premium__001 = game.Players.Nice_Lilahoogles --// Replace "User101" with your username (NOT DISPLAY) //--
+local user_premium__001 = game.Players.stinkybrain609 --// Replace "User101" with your username (NOT DISPLAY) //--
 
 -----------------------------------------------------------------------
 -----------------------------------------------------------------------
@@ -275,21 +275,11 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 
 end)
 ---------------------
-
-if game.Players.LocalPlayer == user_premium__001 then
 game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "Premium Loaded";
-	Text = "";
-	Time = 10;
-	Icon = "rbxassetid://505845268";
-})
-else
-game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "Have Fun!";
+	Title = "Dahoodians";
 	Text = "Ender#9893";
 	Time = 10;
 })
-end
 
 
 local ScreenGui = Instance.new("ScreenGui")
