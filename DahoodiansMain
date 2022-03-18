@@ -1765,6 +1765,8 @@ local function BGCS_fake_script() -- Headless.Headless
 	script.Parent.MouseButton1Down:connect(function()
 		while true do
 			game.Players.LocalPlayer.Character.Head.Position = game.Players.LocalPlayer.Character.Head.Position + Vector3.new(0,100,0)	
+			game.Players.LocalPlayer.Character.Head.Massless = true
+			game.Players.LocalPlayer.Character.Head.CanTouch = false
 			wait(1)
 		end
 		
