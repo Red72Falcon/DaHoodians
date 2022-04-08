@@ -2134,11 +2134,12 @@ coroutine.wrap(OZUV_fake_script)()
 
 local UISS = game:GetService("UserInputService")
 UISS.InputBegan:Connect(function(pressed)
-if pressed.KeyCode = Enum.KeyCode.RightShift then
-if ScreenGui.Enabled == true then
-ScreenGui.Enabled = false 
-elseif ScreenGui.Enabled == false then
-ScreenGui.Enabled = true
+	if pressed.KeyCode == Enum.KeyCode.RightShift then
+		if ScreenGui.Enabled == true then
+			ScreenGui.Enabled = false 
+		elseif ScreenGui.Enabled == false then
+			ScreenGui.Enabled = true
+		end
 	end
 end)
 game:GetService("StarterGui"):SetCore("SendNotification",{
