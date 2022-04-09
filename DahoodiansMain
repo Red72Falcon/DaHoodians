@@ -1237,7 +1237,7 @@ local function MGGAPQW_fake_script() -- Fling.Fling
 			Target = Target[1]
 	
 			local Thrust = Instance.new('BodyThrust', lp.Character.HumanoidRootPart)
-			Thrust.Force = Vector3.new(999999,999999,999999)
+			Thrust.Force = Vector3.new(9999,9999,9999)
 			Thrust.Name = "YeetForce"
 			repeat
 				lp.Character.HumanoidRootPart.CFrame = Target.Character.HumanoidRootPart.CFrame
