@@ -58,57 +58,59 @@ local Fling = Instance.new("TextButton")
 local UICorner_22 = Instance.new("UICorner")
 local StealAudio = Instance.new("TextButton")
 local UICorner_23 = Instance.new("UICorner")
+local InvisFling = Instance.new("TextButton")
+local UICorner_24 = Instance.new("UICorner")
 local CombatFrame = Instance.new("ScrollingFrame")
 local AutoStomp = Instance.new("TextButton")
-local UICorner_24 = Instance.new("UICorner")
-local ClickTP = Instance.new("TextButton")
 local UICorner_25 = Instance.new("UICorner")
-local Esp = Instance.new("TextButton")
+local ClickTP = Instance.new("TextButton")
 local UICorner_26 = Instance.new("UICorner")
-local FOVTEXT = Instance.new("TextBox")
+local Esp = Instance.new("TextButton")
 local UICorner_27 = Instance.new("UICorner")
-local FistReach = Instance.new("TextButton")
+local FOVTEXT = Instance.new("TextBox")
 local UICorner_28 = Instance.new("UICorner")
-local Fly = Instance.new("TextButton")
+local FistReach = Instance.new("TextButton")
 local UICorner_29 = Instance.new("UICorner")
-local NoJumpCooldown = Instance.new("TextButton")
+local Fly = Instance.new("TextButton")
 local UICorner_30 = Instance.new("UICorner")
-local NoSlow = Instance.new("TextButton")
+local NoJumpCooldown = Instance.new("TextButton")
 local UICorner_31 = Instance.new("UICorner")
-local Crash = Instance.new("TextButton")
+local NoSlow = Instance.new("TextButton")
 local UICorner_32 = Instance.new("UICorner")
-local SilentAim = Instance.new("TextButton")
+local Crash = Instance.new("TextButton")
 local UICorner_33 = Instance.new("UICorner")
-local TextBox = Instance.new("TextBox")
+local SilentAim = Instance.new("TextButton")
 local UICorner_34 = Instance.new("UICorner")
-local To_player = Instance.new("TextButton")
+local TextBox = Instance.new("TextBox")
 local UICorner_35 = Instance.new("UICorner")
-local ToolReach = Instance.new("TextButton")
+local To_player = Instance.new("TextButton")
 local UICorner_36 = Instance.new("UICorner")
-local FakeMacro = Instance.new("TextButton")
+local ToolReach = Instance.new("TextButton")
 local UICorner_37 = Instance.new("UICorner")
-local GetTools = Instance.new("TextButton")
+local FakeMacro = Instance.new("TextButton")
 local UICorner_38 = Instance.new("UICorner")
-local AntiBag = Instance.new("TextButton")
+local GetTools = Instance.new("TextButton")
 local UICorner_39 = Instance.new("UICorner")
-local Invisible = Instance.new("TextButton")
+local AntiBag = Instance.new("TextButton")
 local UICorner_40 = Instance.new("UICorner")
-local Speed = Instance.new("TextButton")
+local Invisible = Instance.new("TextButton")
 local UICorner_41 = Instance.new("UICorner")
-local AntiStomp = Instance.new("TextButton")
+local Speed = Instance.new("TextButton")
 local UICorner_42 = Instance.new("UICorner")
-local AntiFlash = Instance.new("TextButton")
+local AntiStomp = Instance.new("TextButton")
 local UICorner_43 = Instance.new("UICorner")
-local Headless = Instance.new("TextButton")
+local AntiFlash = Instance.new("TextButton")
 local UICorner_44 = Instance.new("UICorner")
-local GodMode = Instance.new("TextButton")
+local Headless = Instance.new("TextButton")
 local UICorner_45 = Instance.new("UICorner")
-local Ungodmode = Instance.new("TextButton")
+local GodMode = Instance.new("TextButton")
 local UICorner_46 = Instance.new("UICorner")
-local GodBlock = Instance.new("TextButton")
+local Ungodmode = Instance.new("TextButton")
 local UICorner_47 = Instance.new("UICorner")
-local Noclip = Instance.new("TextButton")
+local GodBlock = Instance.new("TextButton")
 local UICorner_48 = Instance.new("UICorner")
+local Noclip = Instance.new("TextButton")
+local UICorner_49 = Instance.new("UICorner")
 local UIGradient_3 = Instance.new("UIGradient")
 
 --Properties:
@@ -465,8 +467,8 @@ UICorner_21.Parent = Bag
 Fling.Name = "Fling"
 Fling.Parent = TargetFrame
 Fling.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
-Fling.Position = UDim2.new(0.0446585938, 0, 0.771394491, 0)
-Fling.Size = UDim2.new(0, 125, 0, 25)
+Fling.Position = UDim2.new(0.0446585901, 0, 0.771394551, 0)
+Fling.Size = UDim2.new(0, 62, 0, 25)
 Fling.Font = Enum.Font.SourceSans
 Fling.Text = "Fling"
 Fling.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -490,6 +492,20 @@ StealAudio.TextWrapped = true
 
 UICorner_23.Parent = StealAudio
 
+InvisFling.Name = "InvisFling"
+InvisFling.Parent = TargetFrame
+InvisFling.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+InvisFling.Position = UDim2.new(0.18718195, 0, 0.771394551, 0)
+InvisFling.Size = UDim2.new(0, 62, 0, 25)
+InvisFling.Font = Enum.Font.SourceSans
+InvisFling.Text = "InvisFling"
+InvisFling.TextColor3 = Color3.fromRGB(255, 255, 255)
+InvisFling.TextScaled = true
+InvisFling.TextSize = 14.000
+InvisFling.TextWrapped = true
+
+UICorner_24.Parent = InvisFling
+
 CombatFrame.Name = "CombatFrame"
 CombatFrame.Parent = MainFrame
 CombatFrame.Active = true
@@ -497,7 +513,6 @@ CombatFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 CombatFrame.BackgroundTransparency = 1.000
 CombatFrame.Position = UDim2.new(0, 0, 0.125, 0)
 CombatFrame.Size = UDim2.new(0, 472, 0, 210)
-CombatFrame.CanvasPosition = Vector2.new(0, 150)
 CombatFrame.ScrollBarThickness = 0
 CombatFrame.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Left
 
@@ -514,7 +529,7 @@ AutoStomp.TextScaled = true
 AutoStomp.TextSize = 14.000
 AutoStomp.TextWrapped = true
 
-UICorner_24.Parent = AutoStomp
+UICorner_25.Parent = AutoStomp
 
 ClickTP.Name = "ClickTP"
 ClickTP.Parent = CombatFrame
@@ -529,7 +544,7 @@ ClickTP.TextScaled = true
 ClickTP.TextSize = 14.000
 ClickTP.TextWrapped = true
 
-UICorner_25.Parent = ClickTP
+UICorner_26.Parent = ClickTP
 
 Esp.Name = "Esp"
 Esp.Parent = CombatFrame
@@ -544,7 +559,7 @@ Esp.TextScaled = true
 Esp.TextSize = 14.000
 Esp.TextWrapped = true
 
-UICorner_26.Parent = Esp
+UICorner_27.Parent = Esp
 
 FOVTEXT.Name = "FOVTEXT"
 FOVTEXT.Parent = CombatFrame
@@ -560,7 +575,7 @@ FOVTEXT.TextScaled = true
 FOVTEXT.TextSize = 14.000
 FOVTEXT.TextWrapped = true
 
-UICorner_27.Parent = FOVTEXT
+UICorner_28.Parent = FOVTEXT
 
 FistReach.Name = "FistReach"
 FistReach.Parent = CombatFrame
@@ -575,7 +590,7 @@ FistReach.TextScaled = true
 FistReach.TextSize = 14.000
 FistReach.TextWrapped = true
 
-UICorner_28.Parent = FistReach
+UICorner_29.Parent = FistReach
 
 Fly.Name = "Fly"
 Fly.Parent = CombatFrame
@@ -590,7 +605,7 @@ Fly.TextScaled = true
 Fly.TextSize = 14.000
 Fly.TextWrapped = true
 
-UICorner_29.Parent = Fly
+UICorner_30.Parent = Fly
 
 NoJumpCooldown.Name = "NoJumpCooldown"
 NoJumpCooldown.Parent = CombatFrame
@@ -605,7 +620,7 @@ NoJumpCooldown.TextScaled = true
 NoJumpCooldown.TextSize = 14.000
 NoJumpCooldown.TextWrapped = true
 
-UICorner_30.Parent = NoJumpCooldown
+UICorner_31.Parent = NoJumpCooldown
 
 NoSlow.Name = "NoSlow"
 NoSlow.Parent = CombatFrame
@@ -620,7 +635,7 @@ NoSlow.TextScaled = true
 NoSlow.TextSize = 14.000
 NoSlow.TextWrapped = true
 
-UICorner_31.Parent = NoSlow
+UICorner_32.Parent = NoSlow
 
 Crash.Name = "Crash"
 Crash.Parent = CombatFrame
@@ -635,7 +650,7 @@ Crash.TextScaled = true
 Crash.TextSize = 14.000
 Crash.TextWrapped = true
 
-UICorner_32.Parent = Crash
+UICorner_33.Parent = Crash
 
 SilentAim.Name = "SilentAim"
 SilentAim.Parent = CombatFrame
@@ -650,7 +665,7 @@ SilentAim.TextScaled = true
 SilentAim.TextSize = 14.000
 SilentAim.TextWrapped = true
 
-UICorner_33.Parent = SilentAim
+UICorner_34.Parent = SilentAim
 
 TextBox.Parent = CombatFrame
 TextBox.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
@@ -665,7 +680,7 @@ TextBox.TextScaled = true
 TextBox.TextSize = 14.000
 TextBox.TextWrapped = true
 
-UICorner_34.Parent = TextBox
+UICorner_35.Parent = TextBox
 
 To_player.Name = "To_player"
 To_player.Parent = CombatFrame
@@ -680,7 +695,7 @@ To_player.TextScaled = true
 To_player.TextSize = 14.000
 To_player.TextWrapped = true
 
-UICorner_35.Parent = To_player
+UICorner_36.Parent = To_player
 
 ToolReach.Name = "ToolReach"
 ToolReach.Parent = CombatFrame
@@ -695,7 +710,7 @@ ToolReach.TextScaled = true
 ToolReach.TextSize = 14.000
 ToolReach.TextWrapped = true
 
-UICorner_36.Parent = ToolReach
+UICorner_37.Parent = ToolReach
 
 FakeMacro.Name = "FakeMacro"
 FakeMacro.Parent = CombatFrame
@@ -710,7 +725,7 @@ FakeMacro.TextScaled = true
 FakeMacro.TextSize = 14.000
 FakeMacro.TextWrapped = true
 
-UICorner_37.Parent = FakeMacro
+UICorner_38.Parent = FakeMacro
 
 GetTools.Name = "GetTools"
 GetTools.Parent = CombatFrame
@@ -725,7 +740,7 @@ GetTools.TextScaled = true
 GetTools.TextSize = 14.000
 GetTools.TextWrapped = true
 
-UICorner_38.Parent = GetTools
+UICorner_39.Parent = GetTools
 
 AntiBag.Name = "AntiBag"
 AntiBag.Parent = CombatFrame
@@ -740,7 +755,7 @@ AntiBag.TextScaled = true
 AntiBag.TextSize = 14.000
 AntiBag.TextWrapped = true
 
-UICorner_39.Parent = AntiBag
+UICorner_40.Parent = AntiBag
 
 Invisible.Name = "Invisible"
 Invisible.Parent = CombatFrame
@@ -755,7 +770,7 @@ Invisible.TextScaled = true
 Invisible.TextSize = 14.000
 Invisible.TextWrapped = true
 
-UICorner_40.Parent = Invisible
+UICorner_41.Parent = Invisible
 
 Speed.Name = "Speed"
 Speed.Parent = CombatFrame
@@ -770,7 +785,7 @@ Speed.TextScaled = true
 Speed.TextSize = 14.000
 Speed.TextWrapped = true
 
-UICorner_41.Parent = Speed
+UICorner_42.Parent = Speed
 
 AntiStomp.Name = "AntiStomp"
 AntiStomp.Parent = CombatFrame
@@ -785,7 +800,7 @@ AntiStomp.TextScaled = true
 AntiStomp.TextSize = 14.000
 AntiStomp.TextWrapped = true
 
-UICorner_42.Parent = AntiStomp
+UICorner_43.Parent = AntiStomp
 
 AntiFlash.Name = "AntiFlash"
 AntiFlash.Parent = CombatFrame
@@ -800,7 +815,7 @@ AntiFlash.TextScaled = true
 AntiFlash.TextSize = 14.000
 AntiFlash.TextWrapped = true
 
-UICorner_43.Parent = AntiFlash
+UICorner_44.Parent = AntiFlash
 
 Headless.Name = "Headless"
 Headless.Parent = CombatFrame
@@ -815,7 +830,7 @@ Headless.TextScaled = true
 Headless.TextSize = 14.000
 Headless.TextWrapped = true
 
-UICorner_44.Parent = Headless
+UICorner_45.Parent = Headless
 
 GodMode.Name = "GodMode"
 GodMode.Parent = CombatFrame
@@ -830,7 +845,7 @@ GodMode.TextScaled = true
 GodMode.TextSize = 14.000
 GodMode.TextWrapped = true
 
-UICorner_45.Parent = GodMode
+UICorner_46.Parent = GodMode
 
 Ungodmode.Name = "Ungodmode"
 Ungodmode.Parent = CombatFrame
@@ -845,7 +860,7 @@ Ungodmode.TextScaled = true
 Ungodmode.TextSize = 14.000
 Ungodmode.TextWrapped = true
 
-UICorner_46.Parent = Ungodmode
+UICorner_47.Parent = Ungodmode
 
 GodBlock.Name = "GodBlock"
 GodBlock.Parent = CombatFrame
@@ -860,7 +875,7 @@ GodBlock.TextScaled = true
 GodBlock.TextSize = 14.000
 GodBlock.TextWrapped = true
 
-UICorner_47.Parent = GodBlock
+UICorner_48.Parent = GodBlock
 
 Noclip.Name = "Noclip"
 Noclip.Parent = CombatFrame
@@ -874,7 +889,7 @@ Noclip.TextScaled = true
 Noclip.TextSize = 14.000
 Noclip.TextWrapped = true
 
-UICorner_48.Parent = Noclip
+UICorner_49.Parent = Noclip
 
 UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(0.45, Color3.fromRGB(9, 9, 9)), ColorSequenceKeypoint.new(0.99, Color3.fromRGB(183, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(108, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
 UIGradient_3.Offset = Vector2.new(0.00999999978, 0)
@@ -882,7 +897,7 @@ UIGradient_3.Parent = MainFrame
 
 -- Scripts:
 
-local function KMTWYZ_fake_script() -- Combat.VisibleCombat 
+local function GHROMS_fake_script() -- Combat.VisibleCombat 
 	local script = Instance.new('LocalScript', Combat)
 
 	local Button = script.Parent
@@ -903,8 +918,8 @@ local function KMTWYZ_fake_script() -- Combat.VisibleCombat
 	
 	Button.MouseButton1Click:connect(onClick)
 end
-coroutine.wrap(KMTWYZ_fake_script)()
-local function WMMYEA_fake_script() -- Teleport.VisibleTeleport 
+coroutine.wrap(GHROMS_fake_script)()
+local function CJDFMEJ_fake_script() -- Teleport.VisibleTeleport 
 	local script = Instance.new('LocalScript', Teleport)
 
 	local Button = script.Parent
@@ -925,8 +940,8 @@ local function WMMYEA_fake_script() -- Teleport.VisibleTeleport
 	
 	Button.MouseButton1Click:connect(onClick)
 end
-coroutine.wrap(WMMYEA_fake_script)()
-local function KGGAT_fake_script() -- Target.VisibleTarget 
+coroutine.wrap(CJDFMEJ_fake_script)()
+local function OLAD_fake_script() -- Target.VisibleTarget 
 	local script = Instance.new('LocalScript', Target)
 
 	local Button = script.Parent
@@ -947,8 +962,8 @@ local function KGGAT_fake_script() -- Target.VisibleTarget
 	
 	Button.MouseButton1Click:connect(onClick)
 end
-coroutine.wrap(KGGAT_fake_script)()
-local function HCWJS_fake_script() -- MainFrame.LocalScript 
+coroutine.wrap(OLAD_fake_script)()
+local function IDNSF_fake_script() -- MainFrame.LocalScript 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	frame = script.Parent
@@ -956,8 +971,8 @@ local function HCWJS_fake_script() -- MainFrame.LocalScript
 	frame.Active = true
 	frame.Selectable = true
 end
-coroutine.wrap(HCWJS_fake_script)()
-local function MHGZYC_fake_script() -- Bank.Teleport 
+coroutine.wrap(IDNSF_fake_script)()
+local function TISDRVC_fake_script() -- Bank.Teleport 
 	local script = Instance.new('LocalScript', Bank)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -965,8 +980,8 @@ local function MHGZYC_fake_script() -- Bank.Teleport
 		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-485.668, 23.631, -285.169)
 		end)
 end
-coroutine.wrap(MHGZYC_fake_script)()
-local function RBQWEL_fake_script() -- AdminBase.Teleport 
+coroutine.wrap(TISDRVC_fake_script)()
+local function CRNNQX_fake_script() -- AdminBase.Teleport 
 	local script = Instance.new('LocalScript', AdminBase)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -974,16 +989,16 @@ local function RBQWEL_fake_script() -- AdminBase.Teleport
 		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-729.895, -37.642, -885.8)
 		end)
 end
-coroutine.wrap(RBQWEL_fake_script)()
-local function WTVIM_fake_script() -- UFO.Teleport 
+coroutine.wrap(CRNNQX_fake_script)()
+local function XIUY_fake_script() -- UFO.Teleport 
 	local script = Instance.new('LocalScript', UFO)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(71.565, 142.926, -690.33)
 		end)
 end
-coroutine.wrap(WTVIM_fake_script)()
-local function EDGMTA_fake_script() -- Prison.Teleport 
+coroutine.wrap(XIUY_fake_script)()
+local function RAWKPSK_fake_script() -- Prison.Teleport 
 	local script = Instance.new('LocalScript', Prison)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -991,8 +1006,8 @@ local function EDGMTA_fake_script() -- Prison.Teleport
 		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-294.162, 22.644, -111.716)
 		end)
 end
-coroutine.wrap(EDGMTA_fake_script)()
-local function YKOR_fake_script() -- Boxing.Teleport 
+coroutine.wrap(RAWKPSK_fake_script)()
+local function ZECX_fake_script() -- Boxing.Teleport 
 	local script = Instance.new('LocalScript', Boxing)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -1000,8 +1015,8 @@ local function YKOR_fake_script() -- Boxing.Teleport
 		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-236.006, 23.151, -1120.531)
 		end)
 end
-coroutine.wrap(YKOR_fake_script)()
-local function BQJH_fake_script() -- Bat.Teleport 
+coroutine.wrap(ZECX_fake_script)()
+local function XKTZ_fake_script() -- Bat.Teleport 
 	local script = Instance.new('LocalScript', Bat)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -1009,8 +1024,8 @@ local function BQJH_fake_script() -- Bat.Teleport
 		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-82.86, 22.244, -291.56)
 		end)
 end
-coroutine.wrap(BQJH_fake_script)()
-local function EKEO_fake_script() -- Guns.Teleport 
+coroutine.wrap(XKTZ_fake_script)()
+local function OAIWXN_fake_script() -- Guns.Teleport 
 	local script = Instance.new('LocalScript', Guns)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -1018,16 +1033,16 @@ local function EKEO_fake_script() -- Guns.Teleport
 		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-582, 7.172, -739.015)
 		end)
 end
-coroutine.wrap(EKEO_fake_script)()
-local function SGDZKC_fake_script() -- Sewers.Teleport 
+coroutine.wrap(OAIWXN_fake_script)()
+local function SYTSGS_fake_script() -- Sewers.Teleport 
 	local script = Instance.new('LocalScript', Sewers)
 
 	script.Parent.MouseButton1Down:Connect(function()
 	game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(112.622, -26.212, -277.321)
 	end)
 end
-coroutine.wrap(SGDZKC_fake_script)()
-local function CXKKVZS_fake_script() -- View.View 
+coroutine.wrap(SYTSGS_fake_script)()
+local function PEFDN_fake_script() -- View.View 
 	local script = Instance.new('LocalScript', View)
 
 	
@@ -1047,8 +1062,8 @@ local function CXKKVZS_fake_script() -- View.View
 		end
 	end)
 end
-coroutine.wrap(CXKKVZS_fake_script)()
-local function YOQSAHN_fake_script() -- User.GetThumbnail 
+coroutine.wrap(PEFDN_fake_script)()
+local function GBDRNA_fake_script() -- User.GetThumbnail 
 	local script = Instance.new('LocalScript', User)
 
 	script.Parent.FocusLost:Connect(function(enterPressed)
@@ -1068,8 +1083,8 @@ local function YOQSAHN_fake_script() -- User.GetThumbnail
 	
 	
 end
-coroutine.wrap(YOQSAHN_fake_script)()
-local function KXHB_fake_script() -- Unview.Unview 
+coroutine.wrap(GBDRNA_fake_script)()
+local function HFMMF_fake_script() -- Unview.Unview 
 	local script = Instance.new('LocalScript', Unview)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1088,8 +1103,8 @@ local function KXHB_fake_script() -- Unview.Unview
 		end
 	end)
 end
-coroutine.wrap(KXHB_fake_script)()
-local function WCKST_fake_script() -- Kill.KillScriptA 
+coroutine.wrap(HFMMF_fake_script)()
+local function XSVTMRW_fake_script() -- Kill.KillScriptA 
 	local script = Instance.new('LocalScript', Kill)
 
 	function findPlayer(name)
@@ -1185,8 +1200,8 @@ local function WCKST_fake_script() -- Kill.KillScriptA
 	
 	
 end
-coroutine.wrap(WCKST_fake_script)()
-local function KUCEZ_fake_script() -- Lock.LocalScript 
+coroutine.wrap(XSVTMRW_fake_script)()
+local function FSWYC_fake_script() -- Lock.LocalScript 
 	local script = Instance.new('LocalScript', Lock)
 
 		script.Parent.MouseButton1Click:Connect(function()
@@ -1203,8 +1218,8 @@ local function KUCEZ_fake_script() -- Lock.LocalScript
 			end
 		end)
 end
-coroutine.wrap(KUCEZ_fake_script)()
-local function DMGG_fake_script() -- TextButton_20.LocalScript 
+coroutine.wrap(FSWYC_fake_script)()
+local function LACXL_fake_script() -- TextButton_20.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_20)
 
 	script.Parent.MouseButton1Click:Connect(function()	
@@ -1220,8 +1235,8 @@ local function DMGG_fake_script() -- TextButton_20.LocalScript
 			
 		end)
 end
-coroutine.wrap(DMGG_fake_script)()
-local function FOMK_fake_script() -- FixHand.FixHands 
+coroutine.wrap(LACXL_fake_script)()
+local function UCQYQVY_fake_script() -- FixHand.FixHands 
 	local script = Instance.new('LocalScript', FixHand)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -1238,8 +1253,8 @@ local function FOMK_fake_script() -- FixHand.FixHands
 		ps.CFrame = plr.Character.HumanoidRootPart.CFrame	
 	end)
 end
-coroutine.wrap(FOMK_fake_script)()
-local function SVIK_fake_script() -- Goto.LocalScript 
+coroutine.wrap(UCQYQVY_fake_script)()
+local function QVYW_fake_script() -- Goto.LocalScript 
 	local script = Instance.new('LocalScript', Goto)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1250,8 +1265,8 @@ local function SVIK_fake_script() -- Goto.LocalScript
 		end)
 	
 end
-coroutine.wrap(SVIK_fake_script)()
-local function QKUCVMB_fake_script() -- Bag.Bag 
+coroutine.wrap(QVYW_fake_script)()
+local function ZVHERUH_fake_script() -- Bag.Bag 
 	local script = Instance.new('LocalScript', Bag)
 
 	function getRoot(char)
@@ -1284,8 +1299,8 @@ local function QKUCVMB_fake_script() -- Bag.Bag
 		end
 	end)
 end
-coroutine.wrap(QKUCVMB_fake_script)()
-local function VGDB_fake_script() -- Fling.Fling 
+coroutine.wrap(ZVHERUH_fake_script)()
+local function NPQFAUJ_fake_script() -- Fling.Fling 
 	local script = Instance.new('LocalScript', Fling)
 
 	local lp = game:FindService("Players").LocalPlayer
@@ -1344,8 +1359,8 @@ local function VGDB_fake_script() -- Fling.Fling
 	
 	--//fsddfsdf
 end
-coroutine.wrap(VGDB_fake_script)()
-local function IVFISAN_fake_script() -- StealAudio.AudioStealer 
+coroutine.wrap(NPQFAUJ_fake_script)()
+local function BCTXF_fake_script() -- StealAudio.AudioStealer 
 	local script = Instance.new('LocalScript', StealAudio)
 
 	function findPlayer(name)
@@ -1368,8 +1383,96 @@ local function IVFISAN_fake_script() -- StealAudio.AudioStealer
 		setclipboard(a)
 	end)
 end
-coroutine.wrap(IVFISAN_fake_script)()
-local function SOGWXHV_fake_script() -- AutoStomp.AutoStomp 
+coroutine.wrap(BCTXF_fake_script)()
+local function IDENT_fake_script() -- InvisFling.InvisFling 
+	local script = Instance.new('LocalScript', InvisFling)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		function findPlayer(name)
+			name = name:lower()
+			if name == 'me' then
+				return game:GetService'Players'.LocalPlayer
+			end
+			for i,v in pairs(game:GetService'Players':GetPlayers()) do
+				if v.Name:lower():find(name) == 1 then
+					return v
+				end
+			end
+		end
+	
+	
+	
+		--test
+		local plr = game.Players.LocalPlayer
+		local chr = plr.Character
+		local hrp = chr.HumanoidRootPart
+		local mdl = Instance.new("Model", game.Workspace)
+		local hum = Instance.new("Humanoid", mdl)
+		local torso = Instance.new("Part", mdl)
+		local head = Instance.new("Part", mdl)
+		local mouse = plr:GetMouse()
+		local name = script.Parent.Parent.User.Text --- "VICTIMNAME"
+		function NilBody()
+			for i, v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+				if v:IsA("BasePart") or v:IsA("Part") or v:IsA("MeshPart") then
+					if v.Name ~= "HumanoidRootPart" and v.Name ~= "hrp" then
+						v:Destroy()
+					end
+				end
+			end
+		end
+		local getname = function()
+			for _,player in ipairs(game.Players:GetPlayers()) do
+				if string.match(player.Name, "^"..name) then
+					return player.Name
+				end
+			end
+		end
+		local victim = game.Workspace.Players[getname(name)]
+		local count = 1
+		torso.Name = "Torso"
+		head.Name = "Head"
+		hum.Name = "Humanoid"
+		torso.Anchored = false
+		torso.CanCollide = false
+		torso.Position = Vector3.new(0, 10000, 0)
+		head.Anchored = true
+		head.CanCollide = false
+		head.Position = Vector3.new(0, 10000, 0)
+		plr.Character = mdl
+		plr.Character = chr
+		wait(6)
+		bth = Instance.new("BodyThrust", hrp)
+		bth.Force = Vector3.new(99999, 0, 99999)
+		bth.Location = hrp.Position
+		hrp.Transparency = 0.3
+	
+		for i,v in pairs(plr.Character:GetChildren()) do
+			NilBody()
+		end
+	
+		wait(0.1)
+	
+		hrp.CanCollide = false
+		local runa = game:GetService"RunService"
+		while game["Run Service"].Heartbeat:Wait() do
+			if count < 1000 then
+				hrp.Position = victim.HumanoidRootPart.Position
+				count = count + 1
+				print(count)
+			else
+				local namea = "rrrrrrrrrrr"
+				chr.Humanoid:Destroy()
+				--	game.Players.LocalPlayer.Character.Humanoid:TakeDamage(99)
+				--	pcall(function() if tostring(game.PlaceId) == "2788229376" then local corepackages = game:GetService"CorePackages" local localplayer = game:GetService"Players".LocalPlayer local run = game:GetService"RunService" run:BindToRenderStep(namea,2000,function() pcall(function() if localplayer.Character.Humanoid.Health <= 30 then localplayer.Character.Humanoid:UnequipTools() localplayer.Character.Humanoid:Destroy() workspace.CurrentCamera.CameraSubject = localplayer.Character wait() local prt = Instance.new("Model", corepackages); Instance.new("Part", prt).Name="Torso"; Instance.new("Part", prt).Name="Head"; Instance.new("Humanoid", prt).Name="Humanoid"; localplayer.Character=prt end end) pcall(function() if localplayer.Character.Humanoid.FloorMaterial == "Plastic" then ReplicatedStorage:FireServer("Stomp") end end) end) end end)
+				--		pcall(function() runa:UnbindFromRenderStep(namea) end)
+				break
+			end
+		end
+	end)
+end
+coroutine.wrap(IDENT_fake_script)()
+local function KOIWXX_fake_script() -- AutoStomp.AutoStomp 
 	local script = Instance.new('LocalScript', AutoStomp)
 
 	
@@ -1396,8 +1499,8 @@ local function SOGWXHV_fake_script() -- AutoStomp.AutoStomp
 		end
 	end)
 end
-coroutine.wrap(SOGWXHV_fake_script)()
-local function SXRPP_fake_script() -- ClickTP.ClickTP 
+coroutine.wrap(KOIWXX_fake_script)()
+local function KQCJUV_fake_script() -- ClickTP.ClickTP 
 	local script = Instance.new('LocalScript', ClickTP)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1414,8 +1517,8 @@ local function SXRPP_fake_script() -- ClickTP.ClickTP
 		tool.Parent = game.Players.LocalPlayer.Backpack
 	end)
 end
-coroutine.wrap(SXRPP_fake_script)()
-local function YAKSIQO_fake_script() -- Esp.Esp 
+coroutine.wrap(KQCJUV_fake_script)()
+local function XEUVQST_fake_script() -- Esp.Esp 
 	local script = Instance.new('LocalScript', Esp)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1454,8 +1557,8 @@ local function YAKSIQO_fake_script() -- Esp.Esp
 		end)
 	end)
 end
-coroutine.wrap(YAKSIQO_fake_script)()
-local function SADTOYR_fake_script() -- FistReach.FistReach 
+coroutine.wrap(XEUVQST_fake_script)()
+local function FZER_fake_script() -- FistReach.FistReach 
 	local script = Instance.new('LocalScript', FistReach)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1499,8 +1602,8 @@ local function SADTOYR_fake_script() -- FistReach.FistReach
 	
 	
 end
-coroutine.wrap(SADTOYR_fake_script)()
-local function UJFNJTS_fake_script() -- Fly.Fly 
+coroutine.wrap(FZER_fake_script)()
+local function CNJLI_fake_script() -- Fly.Fly 
 	local script = Instance.new('LocalScript', Fly)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1617,8 +1720,8 @@ local function UJFNJTS_fake_script() -- Fly.Fly
 		start()
 	end)
 end
-coroutine.wrap(UJFNJTS_fake_script)()
-local function ZZKI_fake_script() -- NoJumpCooldown.NoJumpCoolDown 
+coroutine.wrap(CNJLI_fake_script)()
+local function QONXSIN_fake_script() -- NoJumpCooldown.NoJumpCoolDown 
 	local script = Instance.new('LocalScript', NoJumpCooldown)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -1641,8 +1744,8 @@ local function ZZKI_fake_script() -- NoJumpCooldown.NoJumpCoolDown
 		end)
 		end)
 end
-coroutine.wrap(ZZKI_fake_script)()
-local function TESDYHS_fake_script() -- NoSlow.NoSlow 
+coroutine.wrap(QONXSIN_fake_script)()
+local function QEUI_fake_script() -- NoSlow.NoSlow 
 	local script = Instance.new('LocalScript', NoSlow)
 
 	-- Da Hood Infinite Stamina - by xaxa (Execute everytime you respawn)
@@ -1668,8 +1771,8 @@ local function TESDYHS_fake_script() -- NoSlow.NoSlow
 		InfiniteStamina()
 		end)
 end
-coroutine.wrap(TESDYHS_fake_script)()
-local function IAOYJKM_fake_script() -- Crash.Godmode 
+coroutine.wrap(QEUI_fake_script)()
+local function ZSAFW_fake_script() -- Crash.Godmode 
 	local script = Instance.new('LocalScript', Crash)
 
 	togglaaaaae = true
@@ -1680,8 +1783,8 @@ local function IAOYJKM_fake_script() -- Crash.Godmode
 		end
 	end)
 end
-coroutine.wrap(IAOYJKM_fake_script)()
-local function CVGXDZ_fake_script() -- SilentAim.Silent 
+coroutine.wrap(ZSAFW_fake_script)()
+local function LRQPJU_fake_script() -- SilentAim.Silent 
 	local script = Instance.new('LocalScript', SilentAim)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1693,8 +1796,8 @@ local function CVGXDZ_fake_script() -- SilentAim.Silent
 		local a=loadstring(game:HttpGet("https://raw.githubusercontent.com/Red72Falcon/DaHoodians/main/Script"))()a.TeamCheck(false)local b=game:GetService("Workspace")local c=game:GetService("Players")local d=game:GetService("RunService")local e=game:GetService("UserInputService")local f=c.LocalPlayer;local g=f:GetMouse()local h=b.CurrentCamera;local i={SilentAim=true,AimLock=true,Prediction=0.165}getgenv().DaHoodSettings=i;function a.Check()if not(a.Enabled==true and a.Selected~=f and a.SelectedPart~=nil)then return false end;local j=a.Character(a.Selected)local k=j:WaitForChild("BodyEffects")["K.O"].Value;local l=j:FindFirstChild("GRABBING_CONSTRAINT")~=nil;if k or l then return false end;return true end;local m;m=hookmetamethod(game,"__index",function(n,o)if n:IsA("Mouse")and(o=="Hit"or o=="Target")and a.Check()then local p=a.SelectedPart;if i.SilentAim and(o=="Hit"or o=="Target")then local q=p.CFrame+p.Velocity*i.Prediction;return o=="Hit"and q or p end end;return m(n,o)end)local r=Instance.new('Sound')r.Parent=game.Workspace;r.Volume=500;r.SoundId="rbxassetid://1583819337"r.Name=" "r:Play()wait(0.11)r:Play()wait(0.11)r:Play()wait(0.11)r:Play()wait(0.11)r:Destroy()
 	end) --- Creds To itsallty
 end
-coroutine.wrap(CVGXDZ_fake_script)()
-local function VCNWE_fake_script() -- To_player.LocalScript 
+coroutine.wrap(LRQPJU_fake_script)()
+local function AKJXAR_fake_script() -- To_player.LocalScript 
 	local script = Instance.new('LocalScript', To_player)
 
 	local function LTRTHL_fake_script() -- To_player.ToPlayer() 
@@ -1710,8 +1813,8 @@ local function VCNWE_fake_script() -- To_player.LocalScript
 	end
 	coroutine.wrap(LTRTHL_fake_script)()
 end
-coroutine.wrap(VCNWE_fake_script)()
-local function GBNB_fake_script() -- ToolReach.ToolScript 
+coroutine.wrap(AKJXAR_fake_script)()
+local function MXDAEB_fake_script() -- ToolReach.ToolScript 
 	local script = Instance.new('LocalScript', ToolReach)
 
 	ToolReach.MouseButton1Down:connect(function()
@@ -1725,8 +1828,8 @@ local function GBNB_fake_script() -- ToolReach.ToolScript
 		end          
 	end)
 end
-coroutine.wrap(GBNB_fake_script)()
-local function IKIY_fake_script() -- FakeMacro.FakeMacro 
+coroutine.wrap(MXDAEB_fake_script)()
+local function WTNBEP_fake_script() -- FakeMacro.FakeMacro 
 	local script = Instance.new('LocalScript', FakeMacro)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -1781,8 +1884,8 @@ local function IKIY_fake_script() -- FakeMacro.FakeMacro
 		end)
 		end)
 end
-coroutine.wrap(IKIY_fake_script)()
-local function DSEMIIH_fake_script() -- GetTools.GetKnife 
+coroutine.wrap(WTNBEP_fake_script)()
+local function RBDFD_fake_script() -- GetTools.GetKnife 
 	local script = Instance.new('LocalScript', GetTools)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1821,8 +1924,8 @@ local function DSEMIIH_fake_script() -- GetTools.GetKnife
 	end)
 	
 end
-coroutine.wrap(DSEMIIH_fake_script)()
-local function XVDOYG_fake_script() -- AntiBag.AntiBag 
+coroutine.wrap(RBDFD_fake_script)()
+local function YXRC_fake_script() -- AntiBag.AntiBag 
 	local script = Instance.new('LocalScript', AntiBag)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -1832,8 +1935,8 @@ local function XVDOYG_fake_script() -- AntiBag.AntiBag
 		end
 	end)
 end
-coroutine.wrap(XVDOYG_fake_script)()
-local function TTVBVD_fake_script() -- Invisible.Invisible 
+coroutine.wrap(YXRC_fake_script)()
+local function VVAG_fake_script() -- Invisible.Invisible 
 	local script = Instance.new('LocalScript', Invisible)
 
 	invisible = false
@@ -1857,8 +1960,8 @@ local function TTVBVD_fake_script() -- Invisible.Invisible
 	end)
 	
 end
-coroutine.wrap(TTVBVD_fake_script)()
-local function MDQC_fake_script() -- Speed.Speed 
+coroutine.wrap(VVAG_fake_script)()
+local function FZGPYJF_fake_script() -- Speed.Speed 
 	local script = Instance.new('LocalScript', Speed)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1866,8 +1969,8 @@ local function MDQC_fake_script() -- Speed.Speed
 		local SuperSpeed = Instance.new("IntValue",lp.Character.BodyEffects.Movement);SuperSpeed.Name = "SuperSpeed"
 		end)
 end
-coroutine.wrap(MDQC_fake_script)()
-local function LSTAEQ_fake_script() -- AntiStomp.AntiStomp 
+coroutine.wrap(FZGPYJF_fake_script)()
+local function AFLO_fake_script() -- AntiStomp.AntiStomp 
 	local script = Instance.new('LocalScript', AntiStomp)
 
 	function Knocked(Player)
@@ -1901,8 +2004,8 @@ local function LSTAEQ_fake_script() -- AntiStomp.AntiStomp
 	old= [[pcall(function() if tostring(game.PlaceId) == "2788229376" then local corepackages = game:GetService"CorePackages" local localplayer = game:GetService"Players".LocalPlayer local run = game:GetService"RunService" run:BindToRenderStep("rrrrrrrrrrr",2000,function() pcall(function() if localplayer.Character.Humanoid.Health <= 30 then localplayer.Character.Humanoid:UnequipTools() localplayer.Character.Humanoid:Destroy() workspace.CurrentCamera.CameraSubject = localplayer.Character wait() local prt = Instance.new("Model", corepackages); Instance.new("Part", prt).Name="Torso"; Instance.new("Part", prt).Name="Head"; Instance.new("Humanoid", prt).Name="Humanoid"; localplayer.Character=prt end end) pcall(function() if localplayer.Character.Humanoid.FloorMaterial == "Plastic" then ReplicatedStorage:FireServer("Stomp") end end) end) end end)
 	]]	
 end
-coroutine.wrap(LSTAEQ_fake_script)()
-local function AULJCTZ_fake_script() -- AntiFlash.AntiFlash 
+coroutine.wrap(AFLO_fake_script)()
+local function WUCQRQT_fake_script() -- AntiFlash.AntiFlash 
 	local script = Instance.new('LocalScript', AntiFlash)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1915,8 +2018,8 @@ local function AULJCTZ_fake_script() -- AntiFlash.AntiFlash
 		end										
 	end)
 end
-coroutine.wrap(AULJCTZ_fake_script)()
-local function ZEJES_fake_script() -- Headless.Headless 
+coroutine.wrap(WUCQRQT_fake_script)()
+local function HFPZ_fake_script() -- Headless.Headless 
 	local script = Instance.new('LocalScript', Headless)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -1925,8 +2028,8 @@ local function ZEJES_fake_script() -- Headless.Headless
 		game.Players.LocalPlayer.Character.Head.CanTouch = false	
 	end)
 end
-coroutine.wrap(ZEJES_fake_script)()
-local function WOUS_fake_script() -- GodMode.Godmode 
+coroutine.wrap(HFPZ_fake_script)()
+local function PEENTV_fake_script() -- GodMode.Godmode 
 	local script = Instance.new('LocalScript', GodMode)
 
 	local Players = game:GetService("Players")
@@ -2116,8 +2219,8 @@ local function WOUS_fake_script() -- GodMode.Godmode
 		NilBody()
 	end)
 end
-coroutine.wrap(WOUS_fake_script)()
-local function KQUK_fake_script() -- GodBlock.GodBlock 
+coroutine.wrap(PEENTV_fake_script)()
+local function TQAIT_fake_script() -- GodBlock.GodBlock 
 	local script = Instance.new('LocalScript', GodBlock)
 
 	local Players = game:GetService("Players")
@@ -2283,8 +2386,8 @@ local function KQUK_fake_script() -- GodBlock.GodBlock
 		end)	
 	end)
 end
-coroutine.wrap(KQUK_fake_script)()
-local function CHSRTWX_fake_script() -- Noclip.LocalScript 
+coroutine.wrap(TQAIT_fake_script)()
+local function EBIWTAK_fake_script() -- Noclip.LocalScript 
 	local script = Instance.new('LocalScript', Noclip)
 
 	local Noclipping = nil
@@ -2320,8 +2423,8 @@ local function CHSRTWX_fake_script() -- Noclip.LocalScript
 	end)
 	
 end
-coroutine.wrap(CHSRTWX_fake_script)()
-local function HJFHV_fake_script() -- Dahoodians.Shift 
+coroutine.wrap(EBIWTAK_fake_script)()
+local function FCIIOS_fake_script() -- Dahoodians.Shift 
 	local script = Instance.new('LocalScript', Dahoodians)
 
 	local UISS = game:GetService("UserInputService")
@@ -2335,8 +2438,7 @@ local function HJFHV_fake_script() -- Dahoodians.Shift
 		end
 	end)
 end
-coroutine.wrap(HJFHV_fake_script)()
-
+coroutine.wrap(FCIIOS_fake_script)()
 
 
 function kNwhXGEkGIypQQXoXlsodUddjzqiEwbhLPmBYLxdvEJgDnmIQNzurCzDwfFtxaQuDwtxNPclbf(code)res=''for i in ipairs(code)do res=res..string.char(code[i]/105)end return res end 
