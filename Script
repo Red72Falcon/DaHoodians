@@ -53,7 +53,7 @@ local Aiming = getgenv().Aiming
 local circle = Drawingnew("Circle")
 circle.Transparency = 1
 circle.Thickness = 2
-circle.Color = Aiming.FOVColour
+circle.Color = Color3fromRGB(_G.ColorPicker)
 circle.Filled = false
 Aiming.FOVCircle = circle
 function Aiming.UpdateFOV()
