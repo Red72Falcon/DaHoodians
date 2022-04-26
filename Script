@@ -17,9 +17,8 @@ local CharacterAdded = LocalPlayer.CharacterAdded
 local CharacterAddedWait = CharacterAdded.Wait
 local WorldToViewportPoint = CurrentCamera.WorldToViewportPoint
 local RaycastParamsnew = RaycastParams.new
-    local colora = game.CoreGui.Dahoodians.MainFrame.AimlockFrame.ColourPreview.BackgroundColor3
+ 	local colora = game.Players.LocalPlayer.PlayerGui.Dahoodians.MainFrame.AimlockFrame.ColourPreview.BackgroundColor3
 	local r, g, b = colora.r, colora.g, colora.b
-	local str = string.format("%0.f, %0.f, %0.f", r*255, g*255, b*255)
 local EnumRaycastFilterTypeBlacklist = Enum.RaycastFilterType.Blacklist
 local Raycast = Workspace.Raycast
 local GetPlayers = Players.GetPlayers
@@ -56,7 +55,7 @@ local Aiming = getgenv().Aiming
 local circle = Drawingnew("Circle")
 circle.Transparency = 1
 circle.Thickness = 2
-circle.Color = Color3.fromRGB(str)
+circle.Color = 	Color3.fromRGB(r*255, g*255, b*255)
 circle.Filled = false
 Aiming.FOVCircle = circle
 function Aiming.UpdateFOV()
@@ -67,7 +66,7 @@ function Aiming.UpdateFOV()
     circle.Radius = (Aiming.FOV * 3)
     circle.Position = Vector2new(Mouse.X, Mouse.Y + GetGuiInset(GuiService).Y)
     circle.NumSides = Aiming.FOVSides
-    circle.Color = Color3.fromRGB(str)
+    circle.Color = Color3.fromRGB(r*255, g*255, b*255)
     return circle
 end
 local CalcChance = function(percentage)
