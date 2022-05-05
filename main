@@ -4,6 +4,7 @@
 -- Instances:
 
 local CombatFrame = Instance.new("ScrollingFrame")
+CombatFrame.Parent = game.CoreGui.Dahoodians.MainFrame
 local AutoStomp = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
 local ClickTP = Instance.new("TextButton")
