@@ -4139,4 +4139,14 @@ local function ICFOM_fake_script() -- ClickTP.ClickTP
 	end)
 end
 coroutine.wrap(ICFOM_fake_script)()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Red72Falcon/DaHoodians/main/LoaderString'))() 
+local UISS = game:GetService("UserInputService")
+UISS.InputBegan:Connect(function(pressed)
+	if pressed.KeyCode == Enum.KeyCode.RightShift then
+		if Game.CoreGui.Dahoodians.Enabled == true then
+			Game.CoreGui.Dahoodians.Enabled = false 
+		elseif Game.CoreGui.Dahoodians.Enabled == false then
+			Game.CoreGui.Dahoodians.Enabled = true
+		end
+	end
+end)
+---loadstring(game:HttpGet('https://raw.githubusercontent.com/Red72Falcon/DaHoodians/main/LoaderString'))() 
